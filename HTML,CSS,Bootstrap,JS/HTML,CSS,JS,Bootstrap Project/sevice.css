@@ -1,0 +1,193 @@
+.nav_img{
+    float: left;
+}
+.nav_list ul li{
+    font-family: 'Miss Magnolia Script', cursive, sans-serif;
+   
+}
+.nav_list ul li a{
+    color: #A51D37;
+    font-weight: 800;
+    font-size: 20px;
+    margin-left: 30px;
+}
+.nav_img{
+    float: left;
+    width: 125px; 
+    height: 75px; 
+    margin-top: 5px;
+}
+.nav_list ul li a:hover{
+    background-color: transparent;
+    color: #A51D37;
+}
+.colo{
+    background-color:white;
+    padding-bottom: 10px;
+    top: auto;
+    margin-top: 500px;
+}
+
+.hero{
+    height: 73px;
+    width: 100px;
+    position: fixed;
+
+}
+.img1{
+    padding-left: 100px;
+    height:10px ;
+    width:10px;
+    font-size: 60px;
+    color: aliceblue;
+    font-family:Miss Magnolia Script, cursive;
+    float: left 30px;
+     
+
+    
+}
+.dogg{
+    float: left;
+    
+}
+.container{
+    background-color: #b42525;
+}
+.bar1{
+    background-color: white;
+}
+.col-sm{
+    margin-left: 20px;
+}
+.service-images{
+    display: flex;
+    position: relative;   
+    color:#c4c0c1;
+    font-weight: bolder;
+    text-align: center;
+    font-family: 'Miss Magnolia Script', cursive, sans-serif;
+}
+.bo{
+    font-size: 40px;
+    font-family: 'Miss Magnolia Script', cursive, sans-serif;
+}
+.groom{
+    background-color:white;
+    
+
+}
+.text1{
+    display: flex;
+}
+.groom-img{
+    -webkit-box-shadow-:5px 0px 15px 10px rgb(30, 36, 64);
+}
+.content1{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    box-shadow: 5px 5px 5px 5px rgb(30, 36, 64);
+}
+.txt1{
+    padding-right: 225px;
+}
+.text1 p{
+    padding-top: 40px;
+}
+.drk{
+    margin-top: 50px;
+}
+#footer{
+    background-color: #52738A;
+    display:flex;
+    color: white;
+    padding: 20px;
+    font-weight: 800;
+    font-family:'Miss Magnolia Script', cursive, sans-serif;
+}
+#footer a{
+    text-decoration: none;
+    color: white;
+  }
+#footer .address{
+    padding-left: 10%;
+    margin-top: 35px;
+}
+#footer .foodog-img{
+    padding-left:15%;
+}
+#footer .media{
+    padding-left: 10%;
+    margin-top: 50px;
+}
+.address a{
+    text-decoration: none;
+    color: white;
+}
+.media a{
+    padding: 5px;
+}
+.media i{
+    padding: 7px;
+    font-size: 30px;
+}
+.nav_img{
+    float: left;
+}
+.nav_list ul li{
+    font-family: 'Miss Magnolia Script', cursive, sans-serif;
+   
+}
+.nav_list ul li a{
+    
+    font-weight: 800;
+    font-size: 20px;
+    margin-left: 30px;
+}
+.nav_list ul li a:hover{
+    background-color: transparent;
+    
+}
+.nav li a{
+    color: white;
+}
+.pad{
+    color: #b42525;
+}
+.col-4{
+    margin-left: 100px;
+}
+#footer{
+    background-color: #52738A;
+    display:flex;
+    color: white;
+    padding: 20px;
+    font-family: 'Miss Magnolia Script', cursive, sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    width:100%;
+}
+#footer a{
+  text-decoration: none;
+  color: white;
+}
+#footer img{
+      margin-left: 20px;
+}
+.media i{
+  padding: 7px;
+  font-size: 30px;
+}
+.phone{
+  font-size: 29px;
+}
+
+.sofa:hover{
+    transform: scale(1.1);
+}
+.spring:hover{
+    transform: scale(1.1);   
+}
+.groom-img:hover{
+    transform: scale(1.1);
+}

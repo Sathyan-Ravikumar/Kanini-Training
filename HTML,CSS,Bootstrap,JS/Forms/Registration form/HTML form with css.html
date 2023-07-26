@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="Stylesheet" href="registrationstyle.css">
+    </head>
+    <body>
+        <form name="registration" class="reg_form">
+            <label for="fn">first name:</label> <input type="text" id="fn">
+            <label for="ln">last name:</label> <input type="text" id="ln"><br>
+           
+            <br><label for="emailid">email:</label> <input type="email" id="emailid"> <br>
+            
+            <br><label for="pass" >password:</label> <input type="password" id="pass"> <br>
+            
+            <br><label for="cpass">confirm password:</label> <input type="text" id="cpass"> <br>
+            
+            <br><label for="addr">address:</label> <textarea id="addr" rows="10" cols="10"></textarea> <br>
+            
+            <br><label for="num">ph no:</label> <input type="number" id="num" min="7" max="10"> <br>
+
+            <fieldset>
+                <legend>Additional info</legend>
+            <br><label>Gender:</label> 
+            <input type="radio" id="m" name="gen"> <label for="m">Male</label>
+            <input type="radio" id="f" name="gen"> <label for="f">female</label><br>
+            
+            <br><label>Hobies:</label> 
+            <input type="checkbox" id="a" name="hob"> <label for="a">drawing</label>
+            <input type="checkbox" id="b" name="hob"> <label for="b">cooking</label>
+            <input type="checkbox" id="c" name="hob"> <label for="c">reading</label><br>
+
+           <br> <label for="ec">Extra Curricular:</label>
+           <select id="ec" multiple>
+            <option value="NCC">NCC</option>
+            <option value="red cross">red cross</option>
+            <option value="sport">sport</option>
+        </select><br>
+        <label>Age:</label>
+        <input type="number" min="0" max="90"><br>
+    </fieldset>
+
+        <br><label for="dob">DOB:</label>
+        <input type="date" id="dob"><br>
+
+        <br><label for="co">Favorate color:</label>
+        <input type="color" id="co"><br>
+
+        <br> <button onclick="alert('poda')">Click me</button><br>
+
+        <br><input type="submit" value="mistake"><br>
+        <br><input type="reset" value="clear">
+
+        <br>
+        <label for="fc">Fav Country:</label>
+        <input list="countries" id="fc">
+
+        <datalist id="countries">
+            <option value="india"></option>
+            <option value="usa"></option>
+            <option value="africa"></option>
+        </datalist>
+        <br>
+        <label>rating:</label><input type="range" min="0" max="20" >
+
+        </form>
+    </body>
+</html>

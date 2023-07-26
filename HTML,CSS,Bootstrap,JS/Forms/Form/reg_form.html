@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html style="background-color: aqua;">
+    <head>
+        <h1 style="text-align: center;">Job Application</h1>
+    <p>To Apply for the job kindly fill the below details</p></head>
+    <body style="text-align: center;">
+        <form name="Job Application form">
+        <fieldset>
+            <legend><b>Personal Details</b></legend>
+        <label for="firstname">First Name :</label>
+        <input type="text" id="firstname" required><br><br>
+
+        <label for="lastname">Last Name :</label>
+        <input type="text" id="lastname" required>
+        <br><br>
+
+        <label for="emailid">Email id :</label>
+        <input type="email" id="emailid">
+        <br><br>
+
+        <label for="num">Mobile number :</label>
+        <input type="number" min="0" max="10" id="num" required><br>
+        <br>
+
+        <label>Gender :</label>
+        <input type="radio" id="m" name="gender"><label for="m">Male</label>
+        <input type="radio" id="f" name="gender"><label for="f">Female</label><br>
+        <br>
+
+        <label for="dob">DOB :</label>
+        <input id="dob" type="date" required><br><br>
+
+        <label for="age">Age :</label>
+        <input type="number" min="22" max="35" required><br><br>
+
+        <label for="nation">Nationality :</label>
+        <input type="text" id="nation"><br><br>
+
+        <label for="state">State :</label>
+        <input type="text" id="state"><br><br>
+
+        <label for="city">City :</label>
+        <input type="text" id="city"><br><br>
+   
+        <label for="address">Address :</label>
+        <textarea id="address" rows="6" cols="10"></textarea><br><br>
+    <label for="pin">Pincode :</label>
+<input type="number" id="pin"></fieldset><br><br>
+
+       <fieldset> 
+        <legend><b>Acadamics & other details</b></legend>
+        <label>Qualification :</label>
+        <input type="checkbox" id="Hr"><label for="hr">Higher Secondary</label>
+        <input type="checkbox" id="dip"><label for="dip">Diploma</label>
+        <input type="checkbox" id="eng"><label for="eng">Engineering</label><br>
+        <label for="oth">Others</label> <input type="text" id="oth">
+        <br><br>
+        
+        <label for="project">Your Major Project title:</label>
+        <input type="text" id="project"><br><br>
+
+        <label>Technical Skills :</label>
+        <input type="checkbox" id="c"><label for="c">C</label>
+        <input type="checkbox" id="java"><label for="java">Java</label>
+        <input type="checkbox" id="c++"><label for="c++">C++</label>
+        <input type="checkbox" id="c#"><label for="c#">C#</label>
+        <input type="checkbox" id="SQL"><label for="SQL">SQL</label> <br> 
+        <label for="sothers">Others </label><input type="text" id="sothers"><br><br>
+
+        <label for="resume">Upload your Resume :</label>
+        <input type="file" id="resume"  required>
+
+
+      </fieldset><br><br>
+      <input type="reset" value="Clear all"><br><br><input type="submit">
+     
+
+    </form>
+    </body>
+</html>

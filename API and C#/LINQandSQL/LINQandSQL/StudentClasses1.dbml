@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="Student" Class="StudentClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=SATHYAN\SQLEXPRESS;Initial Catalog=Student;Integrated Security=True" SettingsObjectName="LINQandSQL.Properties.Settings" SettingsPropertyName="StudentConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.stud_details" Member="stud_details">
+    <Type Name="stud_detail">
+      <Column Name="rno" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="name" Type="System.String" DbType="NVarChar(20)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

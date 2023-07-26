@@ -1,0 +1,100 @@
+*{
+    margin:1px;
+    padding:2px;
+    box-sizing:border-box;
+}
+#header{
+    display: flex;
+     
+}
+#header .org_name span{
+    color: goldenrod;
+    font-size: 18px;
+}
+#header .org_name{
+    font-size: 22px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.search{
+    padding-left: 35%;
+}
+.goas{
+    padding-left: 20%;
+}
+
+
+#navbar ul{
+    list-style: none;
+}
+#navbar ul li{
+    float:left;
+    width: 19%;
+    background-color: antiquewhite;
+}
+#navbar ul li a{
+    display: block;
+    padding:10px;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#navbar ul li a:hover{
+    background: rgb(246, 223, 192);
+    cursor: pointer;
+}
+
+.update{
+    display: flex;
+}
+
+#articlediv1 .additional ul{
+    list-style: none;
+}
+#articlediv1 .additional ul li{
+    display: inline;
+    width: 20%;
+}
+#articlediv1 .additional ul li a{
+    text-align: center;
+    padding: 20px;
+    text-decoration: none;
+    color:white ;
+    background-color: cadetblue;
+}
+#articlediv1 .additional ul li a:hover{
+    background-color: rgb(64, 144, 147);
+    cursor: pointer;
+}
+.video{
+     display: flex;
+}
+.knowmore{
+    background-color: rgb(161, 59, 59);
+    color: azure;
+    border: none;
+    padding: 15px 20px;
+}
+.footermaindiv{
+    display: flex;
+    background-color:rgb(48, 48, 132);
+    color:white;
+    padding-left: 550px;
+}
+.footerdiv2{
+    padding-left: 50px;
+}
+.useinfo ul li a{
+    text-decoration: none;
+}
+.useinfo ul li{
+    list-style: none;
+}
+.policy ul li{
+    list-style: none;
+}
+#footer ul li a{
+    color:white;
+    list-style: none ;
+    text-decoration: none;
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36">
+<style>
+	g path { stroke: none; }
+	g line { stroke: black; }
+	g circle { stroke: black; }
+	g polyline { stroke: black; }
+</style>
+<g class="root" id="check" data-name="check">
+	<path xmlns="http://www.w3.org/2000/svg" fill="#0d86ca" d="M32.419 5.834C23.978 8.062 17.031 14.094 12.291 21.262a64.037 64.037 0 0 0-5.884-9.338C5.053 10.231 1.522 13.878 2.053 15.459c1.616 4.803 4.306 9.316 6.666 13.797 1.306 2.488 4.803-0.181 5.566-1.803C18.162 19.256 24.619 14.284 32.291 9.666c1.259-0.756 3.053-4.609 0.128-3.831z" />
+</g>
+</svg>

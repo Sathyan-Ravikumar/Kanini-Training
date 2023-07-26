@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="script.js"></script>
+    </head>
+        <body>
+             <p id="para1" onmouseup="f1()">hello</p>
+             <p id="para2" onmouseup="f2()">hi</p>
+             <p id="para3" onclick="f3()">third para</p>
+             <p id="para4" onclick="f4()">function 4</p>
+             <p id="para5" onclick="f5()">function 5</p>
+             <p id="para6" onclick="f6()">function 6</p>
+             <p id="para7" onclick="f6()">function 7</p>
+             <br>
+             <div>
+                <!--passing data through function-->
+                <p id="para8" onclick="functions(10,9)">click here</p>
+                <p id="para9">click here</p>
+             </div>
+<!--objects-->
+             <div>
+                <p id="para10" onclick="f7()">function 9</p>
+                <p id="para11" onclick="f7()">function 9</p>
+                <p id="para12" onclick="f7()">function 10</p>
+             </div>
+             <!--array-->
+             <div>
+                <p id="para13" onclick="f8()">function 8</p>
+                <!--regEx-->
+                <p id="para14" onclick="regex()">function 14</p>
+                <p id="para15" onclick="regex1()">function 14</p>
+             </div>
+        </body>
+</html>
+<!--(general) if x=10,y=2,z=null it print 12null
+     x=10,y=2,z  it will show 12undefined
+    --> 

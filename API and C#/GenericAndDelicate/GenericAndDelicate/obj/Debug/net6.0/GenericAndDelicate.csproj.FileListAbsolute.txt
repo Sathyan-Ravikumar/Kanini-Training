@@ -1,0 +1,15 @@
+D:\C#\GenericAndDelicate\GenericAndDelicate\bin\Debug\net6.0\GenericAndDelicate.exe
+D:\C#\GenericAndDelicate\GenericAndDelicate\bin\Debug\net6.0\GenericAndDelicate.deps.json
+D:\C#\GenericAndDelicate\GenericAndDelicate\bin\Debug\net6.0\GenericAndDelicate.runtimeconfig.json
+D:\C#\GenericAndDelicate\GenericAndDelicate\bin\Debug\net6.0\GenericAndDelicate.dll
+D:\C#\GenericAndDelicate\GenericAndDelicate\bin\Debug\net6.0\GenericAndDelicate.pdb
+D:\C#\GenericAndDelicate\GenericAndDelicate\obj\Debug\net6.0\GenericAndDelicate.csproj.AssemblyReference.cache
+D:\C#\GenericAndDelicate\GenericAndDelicate\obj\Debug\net6.0\GenericAndDelicate.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\GenericAndDelicate\GenericAndDelicate\obj\Debug\net6.0\GenericAndDelicate.AssemblyInfoInputs.cache
+D:\C#\GenericAndDelicate\GenericAndDelicate\obj\Debug\net6.0\GenericAndDelicate.AssemblyInfo.cs
+D:\C#\GenericAndDelicate\GenericAndDelicate\obj\Debug\net6.0\GenericAndDelicate.csproj.CoreCompileInputs.cache
+D:\C#\GenericAndDelicate\GenericAndDelicate\obj\Debug\net6.0\GenericAndDelicate.dll
+D:\C#\GenericAndDelicate\GenericAndDelicate\obj\Debug\net6.0\refint\GenericAndDelicate.dll
+D:\C#\GenericAndDelicate\GenericAndDelicate\obj\Debug\net6.0\GenericAndDelicate.pdb
+D:\C#\GenericAndDelicate\GenericAndDelicate\obj\Debug\net6.0\GenericAndDelicate.genruntimeconfig.cache
+D:\C#\GenericAndDelicate\GenericAndDelicate\obj\Debug\net6.0\ref\GenericAndDelicate.dll

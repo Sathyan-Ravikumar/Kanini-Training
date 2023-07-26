@@ -1,0 +1,9 @@
+.mainqa h1{
+    color: #52738A;
+    font-family: mognolia script,cursive;
+    padding-left: 4%;
+    font-weight: bolder;
+}
+.mainqa .list-style li{
+    list-style-image:url(./images/tick\ point.svg);
+}

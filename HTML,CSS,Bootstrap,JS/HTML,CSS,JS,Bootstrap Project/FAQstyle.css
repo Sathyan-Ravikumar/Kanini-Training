@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+}
+.nav_img{
+    float: left;
+    width: 125px; 
+    height: 75px; 
+    margin-top: 5px;
+}
+.nav_list ul li{
+    font-family: 'Miss Magnolia Script', cursive, sans-serif;
+   
+}
+.nav_list ul li a{
+    color: #A51D37;
+    font-weight: 800;
+    font-size: 20px;
+    margin-left: 30px;
+}
+.nav_list ul li a:hover{
+    background-color: transparent;
+    color:#6d0c1e;
+}
+.heading{
+    display: flex;
+}
+.mainqa{
+    padding-left: 17.5%;
+    padding-right: 12%;
+    text-align: justify;
+    
+}
+.mainqa ul li{
+  list-style: none;
+  font-family:'Miss Magnolia Script', cursive, sans-serif;
+  font-size: 18px;
+}
+.mainqa .list-style li{
+    list-style-image:url(./images/tick\ point.svg);
+}
+.mainqa ul li h3{
+    color: #A51D37;
+    font-family:'Miss Magnolia Script', cursive, sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+}
+.mainqa ul li p{
+    font-family: 'Miss Magnolia Script', cursive, sans-serif;
+    font-size: 18px;
+}
+
+.Faqlist{
+    margin-top: 10%;
+    padding-right: 6%;
+}
+.def{
+    margin-top: 50px;
+    padding-left: 18%;
+    padding-right: 30%;
+    text-align: justify;
+    font-size: 26px;
+}
+.def h1{
+    font-weight:bolder;
+    font-size: 26px;
+    color: #6d0c1e;
+    font-family: 'Miss Magnolia Script', cursive, sans-serif;
+}
+.def p{
+    font-family:'Miss Magnolia Script', cursive, sans-serif;
+    font-size: 18px;
+}
+.Faqlist h3 a{
+    text-decoration: none;
+    color:#6d0c1e;
+}
+.Faqlist h3{
+    font-family: 'Miss Magnolia Script', cursive, sans-serif;
+    font-size: 2.5em;
+    color:#6d0c1e;
+    font-weight: bolder;
+}
+.Faqlist ul li{
+    list-style-image:url(./images/tick\ point.svg);
+    font-size: 24px;
+}
+.Faqlist ul li a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Miss Magnolia Script', cursive, sans-serif;
+}
+.Faqlist .service{
+    padding-top: 40%;
+   
+}
+
+.service-images{
+    display: flex;
+    position: relative;   
+    color:#A51D37;
+    font-weight: bolder;
+    font-size: 32px;
+    text-align: center;
+    font-family: 'Miss Magnolia Script', cursive, sans-serif;
+
+}
+.groom-img{
+    padding-right: 20px;
+    padding-left: 8%;
+    opacity: 1;
+}
+.train-img{
+    padding-right: 20px;
+    opacity: 1;
+}
+.groom-img:hover{
+    opacity: 0.7;
+}
+.train-img:hover{
+    opacity: 0.7;
+}
+.food-img{
+    opacity:1;
+}
+.food-img:hover{
+    opacity:0.7;
+}
+
+#footer{
+    background-color: #52738A;
+    display:flex;
+    color: white;
+    padding: 20px;
+    font-family: 'Miss Magnolia Script', cursive, sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+}
+#footer .address{
+    padding-left: 10%;
+    margin-top: 35px;
+}
+#footer .foodog-img{
+    padding-left:15%;
+}
+#footer .media{
+    padding-left: 10%;
+    margin-top: 50px;
+}
+.address a{
+    text-decoration: none;
+    color: white;
+}
+
+.media i{
+    padding: 10px;
+    font-size: 30px;
+}
+.phone{
+    font-size: 29px;
+}
+

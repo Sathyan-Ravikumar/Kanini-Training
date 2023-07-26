@@ -1,0 +1,73 @@
+.nav_img{
+    float: left;
+}
+.nav_list ul li{
+    font-family: 'Miss Magnolia Script', cursive, sans-serif;
+   
+}
+.nav_list ul li a{
+    color: #A51D37;
+    font-weight: 800;
+    font-size: 20px;
+    margin-left: 30px;
+}
+.nav_list ul li a:hover{
+    background-color: transparent;
+    color: #A51D37;
+}
+.image-container {
+    position: relative;
+  }
+  
+  .overl {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: #fff; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0; 
+    transition: opacity 0.5s ease; 
+  }
+  
+  .image-container:hover .overl {
+    opacity: 5; 
+  }
+  
+  .overl h2 {
+    font-size: 40px; 
+    
+  }
+  #footer{
+    background-color: #52738A;
+    display:flex;
+    color: white;
+    padding: 20px;
+    font-family: 'Miss Magnolia Script', cursive, sans-serif;
+    font-weight: 800;
+    font-size: 16px;
+    width:100%;
+}
+#footer a{
+  text-decoration: none;
+  color: white;
+}
+#footer img{
+      margin-left: 20px;
+}
+.media i{
+  padding: 7px;
+  font-size: 30px;
+}
+.phone{
+  font-size: 29px;
+}
+.img-fluid:hover{
+  transform: scale(1.1);
+}

@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Video
+{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    padding: 0 5%;
+    display :flex;
+    align-items: center;
+    justify-content: center;
+}
+.list li a{
+     font-size: 20px;
+     font-family: 'Miss Magnolia Script', cursive, sans-serif;;
+
+}
+nav{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left:0;
+    padding: 20px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.nav_img{
+    float: left;
+    width: 125px; 
+    height: 75px; 
+    margin-top: 5px;
+}
+nav ul li{
+    list-style:none;
+    display: inline-block;
+    margin-left: 40px ;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 17px;
+    color: #A51D37;
+    font-family: 'Miss Magnolia Script', cursive, sans-serif;
+}
+nav ul li a:hover{
+    color: #671323;
+}
+.content{
+    text-align: center;
+}
+.content h1{
+    font-size: 160px;
+    color: #A51D37;
+    font-weight:600;
+    transition: 0.5s;
+    font-family: 'Miss Magnolia Script', cursive, sans-serif;
+}
+.content h1:hover{
+    -webkit-text-stroke: 2px #100101;
+    color:transparent;
+}
+.content a{
+    text-decoration: none;
+    display:inline-block;
+    color:#A51D37;
+    font-size: 24px;
+    border: 2px solid rgb(3, 0, 0);
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+    font-family: 'Miss Magnolia Script', cursive, sans-serif;
+}
+.back-video{
+    position: absolute;
+    right: 0;
+    border: 0;
+    z-index: -1;
+}
+@media(min-aspect-ratio:16/9){
+    .back-video{
+        width:100%;
+        height: auto;
+    }
+}
+@media(max-aspect-ratio:16/9){
+    .back-video{
+        width:auto;
+        height: 100%;
+    }
+}
+
+#footer{
+    background-color: #52738A;
+    display:flex;
+    color: white;
+    padding: 20px;
+    font-weight: 800;
+    font-family:'Miss Magnolia Script', cursive, sans-serif;
+}
+#footer a{
+    text-decoration: none;
+    color: white;
+  }
+#footer .address{
+    padding-left: 10%;
+    margin-top: 35px;
+}
+#footer .foodog-img{
+    padding-left:15%;
+}
+#footer .media{
+    padding-left: 10%;
+    margin-top: 50px;
+}
+.address a{
+    text-decoration: none;
+    color: white;
+}
+.media a{
+    padding: 5px;
+}
+.media i{
+    padding: 7px;
+    font-size: 30px;
+}

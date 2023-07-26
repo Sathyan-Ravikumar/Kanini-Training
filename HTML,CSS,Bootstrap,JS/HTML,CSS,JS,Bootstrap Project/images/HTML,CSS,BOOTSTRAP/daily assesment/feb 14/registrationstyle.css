@@ -1,0 +1,9 @@
+body{
+    background-image: conic-gradient(rgba(18, 116, 213, 0.23),rgba(81, 11, 234, 0.438),rgba(40, 185, 132, 0.926),rgba(163, 18, 57, 0.438),rgba(68, 140, 40, 0.438),rgba(11, 21, 129, 0.438),rgba(106, 82, 82, 0.438));
+    
+}
+.reg_form{
+    margin: 30px 20%;
+    border: 2px solid yellow;
+    padding: 20px 10%;
+}

@@ -1,0 +1,15 @@
+D:\C#\DesignPattern\Factory\Adaptor\bin\Debug\net7.0\Adaptor.exe
+D:\C#\DesignPattern\Factory\Adaptor\bin\Debug\net7.0\Adaptor.deps.json
+D:\C#\DesignPattern\Factory\Adaptor\bin\Debug\net7.0\Adaptor.runtimeconfig.json
+D:\C#\DesignPattern\Factory\Adaptor\bin\Debug\net7.0\Adaptor.dll
+D:\C#\DesignPattern\Factory\Adaptor\bin\Debug\net7.0\Adaptor.pdb
+D:\C#\DesignPattern\Factory\Adaptor\obj\Debug\net7.0\Adaptor.csproj.AssemblyReference.cache
+D:\C#\DesignPattern\Factory\Adaptor\obj\Debug\net7.0\Adaptor.GeneratedMSBuildEditorConfig.editorconfig
+D:\C#\DesignPattern\Factory\Adaptor\obj\Debug\net7.0\Adaptor.AssemblyInfoInputs.cache
+D:\C#\DesignPattern\Factory\Adaptor\obj\Debug\net7.0\Adaptor.AssemblyInfo.cs
+D:\C#\DesignPattern\Factory\Adaptor\obj\Debug\net7.0\Adaptor.csproj.CoreCompileInputs.cache
+D:\C#\DesignPattern\Factory\Adaptor\obj\Debug\net7.0\Adaptor.dll
+D:\C#\DesignPattern\Factory\Adaptor\obj\Debug\net7.0\refint\Adaptor.dll
+D:\C#\DesignPattern\Factory\Adaptor\obj\Debug\net7.0\Adaptor.pdb
+D:\C#\DesignPattern\Factory\Adaptor\obj\Debug\net7.0\Adaptor.genruntimeconfig.cache
+D:\C#\DesignPattern\Factory\Adaptor\obj\Debug\net7.0\ref\Adaptor.dll

@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Relation1", "EfDbApi\Relation1.csproj", "{C96F26C8-6783-478E-B88E-7B229EAB91FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Relation2", "Relation2\Relation2.csproj", "{09EED200-7168-4641-A69C-164862651E2E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BE2DEDC1-3B5E-402C-9AB1-578D0E43087B}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C96F26C8-6783-478E-B88E-7B229EAB91FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C96F26C8-6783-478E-B88E-7B229EAB91FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C96F26C8-6783-478E-B88E-7B229EAB91FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C96F26C8-6783-478E-B88E-7B229EAB91FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09EED200-7168-4641-A69C-164862651E2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09EED200-7168-4641-A69C-164862651E2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09EED200-7168-4641-A69C-164862651E2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09EED200-7168-4641-A69C-164862651E2E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {97E6907B-CA5F-40CF-96D4-BF15FD76ED8D}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,67 @@
+*{
+    margin:1px;
+    padding:2px;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Times new roman";
+    line-height: 1.15em;
+}
+a{
+    text-decoration:none;
+    color:chocolate ;
+}
+.container{
+    max-width: 1100px;
+    margin: auto;
+}
+#navbar{
+    background: #0fa5ca;
+    overflow: auto;
+}
+#navbar h1{
+    float: left;
+    padding-top: 30px;
+}
+#navbar ul{
+    list-style: none;
+    float: right;
+}
+#navbar ul li{
+    float:left;
+}
+/*#navbar ul li a{
+    display:block;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.5s;
+}
+#navbar ul li a:hover{
+    background: #9010b0;
+    transition: all 0.5s;
+}
+#showcase{
+    background: url('goa1.jpg') no-repeat center center/cover;
+    height: 400px;
+    color:black;
+}
+.showcase-content{
+    padding-top: 70px;
+    color: beige;
+}
+
+.showcase-content h2{
+    font-size: 20px;
+    line-height: 1.5em;
+}
+
+.showcase-content p{
+    font-size: 16px;
+    margin-bottom:20px ;
+}
+.lead{
+    font-size: 16px;
+    padding: 10px 10px;
+    text-align: justify;
+}*/

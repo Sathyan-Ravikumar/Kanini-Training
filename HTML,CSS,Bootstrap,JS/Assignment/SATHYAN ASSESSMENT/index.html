@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap-grid.min.css" integrity="sha512-JQksK36WdRekVrvdxNyV3B0Q1huqbTkIQNbz1dlcFVgNynEMRl0F8OSqOGdVppLUDIvsOejhr/W5L3G/b3J+8w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <h1>AC Maintenance Service</h1>
+        <form>
+            <table>
+                <tr>
+                    <td><label for ="cn">Customer Name</label></td>
+                    <td><input type="text" id = "customerName" placeholder="Enter your name" name="FirstName" id="fn" required></td>
+                </tr>
+
+                <tr>
+                    <td><label>Gender</label></td>
+                    <td><input type="radio" id="male" value="male"><label for="m">Male</label>
+                        <input type="radio" id="female" value="female"><label for="f">Female</label></td>
+                </tr>
+
+                <tr>
+                    <td><label for="num"> Mobile Number</label></td>
+                    <td><input type="number" id="mobileNumber" placeholder="Enter your mobile number" maxlength="10" required>
+                </tr>
+
+                <tr>
+                    <td><label for="ema">Email ID</label></td>
+                    <td><input type="email" id="email" placeholder="Enter your email id" required></td>
+                </tr>
+
+                <tr>
+                    <td><label for="add"> Address</label></td>
+                    <td><textarea id="address" rows="5" columns="25" placeholder="Enter your address" required></textarea></td>
+                </tr>
+
+
+                <tr>
+                    <td><label for="acTypes">AC Type</label></td>
+                    <td>
+                        <input list="acTypes" id="acType" list="types" required>
+                            <datalist id="acTypes">
+                                <option value="Split">
+                                <option value="Window">
+                                <option value="Centralized">
+                                <option value="Portable">
+                            </datalist>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label>Service Type</label></td>
+                    <td>
+                        <select id="serviceType">
+                            <option value="Cleaning">Cleaning</option>
+                            <option value="Repair">Repair</option>
+                            <option value="Gas Refill">Gas Refill</option>
+                          </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label>Date for Appointment</label></td>
+                    <td><input type="date" id="dateForAppointment"  required></td>
+                </tr>
+
+                
+                <tr>
+                    <td><label>Yearly Maintenance</label></td>
+                    <td><input type="checkbox" id="yearlyMaintenance" value="yes">
+                        <label>Select if required</label></td>
+                </tr>
+
+                
+                
+                <tr>
+                    <td><label>Duration in months from the previous service</label></td>
+                    <td><input type="range" id="duration" name="duration" min="0" max="6" step="1" title="0 to 6 Months"></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td><button type="button" class="btns" id="submit">Submit</button>&nbsp;&nbsp;
+                        <input type="reset" value="clear" class="btns" id="reset"></button></td>
+                </tr>
+
+            </table>
+        </form>
+        <div id = "result">
+
+        </div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>

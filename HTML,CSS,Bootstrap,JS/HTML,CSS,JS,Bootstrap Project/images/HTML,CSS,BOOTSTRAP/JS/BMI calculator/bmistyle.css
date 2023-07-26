@@ -1,0 +1,29 @@
+body{
+    margin:0;
+    padding: 0;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+
+}
+.container{
+    margin-top: 10%;
+    padding-left: 35%;
+    
+}
+.box{
+    width: 450px;
+    background-color: aliceblue;
+    border-radius: 38px;
+    border: 2px solid black;
+}
+.input{
+    padding-bottom: 10%;
+}
+#calculate{
+    padding: 10px;
+    border-radius: 15px;
+    color: white;
+    background-color: rgb(49, 128, 170);
+    font-size: 16px;
+    border: none;
+}

@@ -1,0 +1,6 @@
+.Faqlist{
+    margin-top: -7%;
+}
+.mainqa .list-style li{
+    list-style-image:url(./images/tick\ point.svg);
+}
