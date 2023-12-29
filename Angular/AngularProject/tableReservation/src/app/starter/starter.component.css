@@ -1,0 +1,27 @@
+@import url('http://fonts.googleapis.com/css?family=Open+Sans:400.700');
+img{
+    height: 400px;
+    width: 400px;
+}
+*{
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+   font-family: 'cookie';
+   font-size:30px;
+   box-sizing: border-box;
+   margin-left: 10px;
+  
+}
+.bg{
+ background-color:#202a30;
+}
+p{
+    font-weight: 700;
+    justify-content: center;
+}
+.content1{
+    border: none;
+    background-color:white;
+    padding: 0;
+}

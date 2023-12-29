@@ -1,0 +1,164 @@
+<p class="title">MENU DETAILS</p>
+
+<div class="categories">
+  <p>Starter Menu id : 201</p>
+  <p>Lunch Menu id : 202</p>
+  <p>Dinner Menu id : 203</p>
+</div>
+<head><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">PRODUCT ID</th>
+            <th scope="col">CATEGORY ID</th>
+            <th scope="col">DISHNAME</th>
+            <th scope="col">COST</th>
+            <th scope="col">IMAGES</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let p of product">
+            <td>{{p.productid}}</td>
+            <td>{{p.categoryid}}</td>
+            <td>{{p.dishname}}</td>
+            <td>{{p.cost}}</td>
+            <td>{{p.images}}</td>
+                
+        </tr>
+
+    </tbody>
+</table>
+<div class="buttons">
+<button (click)="openPopup()">Add</button>
+<button (click)="openPopup1()">Update</button>
+<button (click)="openPopup2()">Delete</button>
+</div>
+<div class="dialog-box" id="popup">
+    <i class="fa-solid fa-xmark fa-lg" (click)="closePopup()"></i>
+    <div class="form-wrapper">
+      <div class="form-container">
+        <h2>ADD MENU DETAILS</h2>
+        <form [formGroup]="AddForm">
+          <label for="name">Category Id</label>
+          <input
+            type="text"
+            id="name"
+            name="hotelName"
+            placeholder="Hotel name"
+            formControlName="hotelName"
+            required
+          />
+
+          <label for="name">Dish Name</label>
+          <input
+            type="text"
+            id="name"
+            name="address"
+            placeholder="Address"
+            formControlName="address"
+            required
+          />
+
+          <label for="phone">Cost :</label>
+          <input
+            type="text"
+            id="price"
+            name="hotelnumber"
+            placeholder="Contact Number"
+            formControlName="hotelnumber"
+            required
+          />
+          <!-- <label for="name">Instagram</label>
+          <input type="name" id="checkin" name="checkin" formControlName="productQuantity" required /> -->
+          <label for="name">Image Path :</label>
+          <input
+            type="name"
+            id="name"
+            name="instalink"
+            placeholder="Instalink"
+            formControlName="instalink"
+            required
+          />
+          <input type="submit" value="Submit" (click)="Addmenu()" />
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+<div class="dialog-box1" id="popup1" >
+    <i class="fa-solid fa-xmark fa-lg" (click)="closePopup1()"></i>
+    <div class="form-wrapper">
+      <div class="form-container">
+        <h2>UPDATE MENU DETAILS</h2>
+        <form>
+            <label for="id">Product Id:</label>
+            <input id="locId" name="locId" type="text" [(ngModel)]="productid" required />
+            <label for="name">Category Id</label>
+            <input
+              type="text"
+              id="name"
+              name="categoryid"
+              [(ngModel)]="LocationList.categoryid"
+              [ngModelOptions]="{ standalone: true }"
+              required
+            />
+            <label for="Cost">Dishname : </label>
+            <input
+            type="number"
+              id="cost"
+              name="dishname"
+              [(ngModel)]="LocationList.dishname"
+              [ngModelOptions]="{ standalone: true }"
+              required
+            />
+            <label for="perday">Cost :</label>
+            <input
+              type="number"
+              id="perDay"
+              name="cost"
+              [(ngModel)]="LocationList.cost"
+              [ngModelOptions]="{ standalone: true }"
+              required
+            />
+            <label for="basedOn">Image Path : </label>
+            <input
+              type="text"
+              id="basedOn"
+              name="images"
+              [(ngModel)]="LocationList.images"
+              [ngModelOptions]="{ standalone: true }"
+              required
+            />
+            <button (click)="Updatemenu()">Update</button>
+          </form>
+      </div>
+    </div>
+  </div> 
+
+
+  <div class="dialog-box2" id="popup2">
+    <i class="fa-solid fa-xmark fa-lg" (click)="closePopup2()"></i>
+    <div class="form-wrapper">
+      <div class="form-container">
+        <h2>DELETE MENU</h2>
+        <form>
+            <label for="id">Category Id:</label>
+            <input
+              type="number"
+              id="locId"
+              name="productid"
+              [(ngModel)]="productid",
+              [ngModelOptions]="{ standalone: true }"
+              required
+            />
+            <button (click)="deletemenu()">Delete</button>
+          </form>
+      </div>
+    </div>
+
+  </div>
+  <a class="nextpage" [routerLink]="['admin']">Back</a>

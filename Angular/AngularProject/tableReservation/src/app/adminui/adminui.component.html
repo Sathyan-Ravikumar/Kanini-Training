@@ -1,0 +1,203 @@
+<p class="title">RESTAURANT DETAILS</p>
+<head><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /></head>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Hotel ID</th>
+            <th scope="col">Hotel Name</th>
+            <th scope="col">Address</th>
+            <th scope="col">Contact Number</th>
+            <th scope="col">Instagram</th>
+            <th scope="col">Facebook</th>
+            <th scope="col">Youtube</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let product of products">
+            <td>{{product.hotelid}}</td>
+            <td>{{product.hotelName}}</td>
+            <td>{{product.address}}</td>
+            <td>{{product.hotelnumber}}</td>
+                <td>{{product.instalink}}</td>
+                <td>{{product.facebook}}</td>
+                <td>{{product.youtube}}</td>
+        </tr>
+
+    </tbody>
+</table>
+<div class="buttons">
+<button (click)="openPopup()">Add</button>
+<button (click)="openPopup1()">Update</button>
+<button (click)="openPopup2()">Delete</button>
+</div>
+<div class="dialog-box" id="popup">
+    <i class="fa-solid fa-xmark fa-lg" (click)="closePopup()"></i>
+    <div class="form-wrapper">
+      <div class="form-container">
+        <h2>ADD RESTAURANT DETAILS</h2>
+        <form [formGroup]="AddForm">
+          <label for="name">Hotel Name</label>
+          <input
+            type="text"
+            id="name"
+            name="hotelName"
+            placeholder="Hotel name"
+            formControlName="hotelName"
+            required
+          />
+
+          <label for="name">Address</label>
+          <input
+            type="text"
+            id="name"
+            name="address"
+            placeholder="Address"
+            formControlName="address"
+            required
+          />
+
+          <label for="phone">Contact Number</label>
+          <input
+            type="text"
+            id="price"
+            name="hotelnumber"
+            placeholder="Contact Number"
+            formControlName="hotelnumber"
+            required
+          />
+          <!-- <label for="name">Instagram</label>
+          <input type="name" id="checkin" name="checkin" formControlName="productQuantity" required /> -->
+          <label for="name">Instagram</label>
+          <input
+            type="name"
+            id="name"
+            name="instalink"
+            placeholder="Instalink"
+            formControlName="instalink"
+            required
+          />
+          <label for="phone">Facebook</label>
+          <input
+            type="name"
+            id="name"
+            name="facebook"
+            placeholder="Facebook"
+            formControlName="facebook"
+            required
+          />
+          <label for="phone">Youtube</label>
+          <input
+            type="name"
+            id="name"
+            name="youtube"
+            placeholder="Youtube"
+            formControlName="youtube"
+            required
+          />
+          <input type="submit" value="Submit" (click)="AddNews()" />
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  
+<div class="dialog-box1" id="popup1" >
+    <i class="fa-solid fa-xmark fa-lg" (click)="closePopup1()"></i>
+    <div class="form-wrapper">
+      <div class="form-container">
+        <h2>UPDATE RESTAURANT DETAILS</h2>
+        <form>
+            <label for="id">Hotel Id:</label>
+            <input id="locId" name="locId" type="text" [(ngModel)]="LocationList.hotelid" required />
+            <label for="name">Hotel Name:</label>
+            <input
+              type="text"
+              id="name"
+              name="hotelName"
+              [(ngModel)]="LocationList.hotelName"
+              [ngModelOptions]="{ standalone: true }"
+              required
+            />
+            <label for="Cost">Address :</label>
+            <input
+            type="text"
+              id="cost"
+              name="address"
+              [(ngModel)]="LocationList.address"
+              [ngModelOptions]="{ standalone: true }"
+              required
+            />
+            <label for="perday">Hotel Number:</label>
+            <input
+              type="number"
+              id="perDay"
+              name="hotelnumber"
+              [(ngModel)]="LocationList.hotelnumber"
+              [ngModelOptions]="{ standalone: true }"
+              required
+            />
+            <label for="basedOn">Instagram : </label>
+            <input
+              type="text"
+              id="basedOn"
+              name="instalink"
+              [(ngModel)]="LocationList.instalink"
+              [ngModelOptions]="{ standalone: true }"
+              required
+            />
+            <label for="basedOn">Facebook : </label>
+            <input
+              type="text"
+              id="basedOn"
+              name="facebook"
+              [(ngModel)]="LocationList.facebook"
+              [ngModelOptions]="{ standalone: true }"
+              required
+            />
+            <label for="basedOn">Youtube : </label>
+            <input
+              type="text"
+              id="basedOn"
+              name="youtube"
+              [(ngModel)]="LocationList.youtube"
+              [ngModelOptions]="{ standalone: true }"
+              required
+            />
+            <button (click)="UpdateProductById()">Update</button>
+          </form>
+      </div>
+    </div>
+  </div> 
+
+
+  <div class="dialog-box2" id="popup2">
+    <i class="fa-solid fa-xmark fa-lg" (click)="closePopup2()"></i>
+    <div class="form-wrapper">
+      <div class="form-container">
+        <h2>DELETE RESTAURANT</h2>
+        <form>
+            <label for="id">Product ID:</label>
+            <input
+              type="number"
+              id="locId"
+              name="hotelid"
+              [(ngModel)]="hotelid"
+              [ngModelOptions]="{ standalone: true }"
+              required
+            />
+            <button (click)="deleteProduct()">Delete</button>
+          </form>
+      </div>
+    </div>
+
+  </div>
+  <a class="nextpage" [routerLink]="['/adminmenu']">Edit Menu</a>
+
+
+  

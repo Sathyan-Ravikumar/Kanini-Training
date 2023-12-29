@@ -1,0 +1,29 @@
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel
+=" stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigins>
+<link href="https://fonts.googleapis.com/css2?family=Poppins: wght@500;6008
+display=swap" rel="stylesheet">
+</head>
+
+    <header>
+    <a [routerLink]="" class="logo"><i class='bx bx-restaurant'></i><span>{{hotel.hotelName}}</span></a>
+       <ul class="navbar">
+           <li><a [routerLink]="" class="active">Home</a></li>
+           <!-- <li><a>Contact Us</a></li> -->
+           <li><a [routerLink]="['menu']">Menu</a></li>
+           <li><a [routerLink]="['bookatable']">Book a Table</a></li>
+          
+       </ul>
+       
+       <div class="main">
+        <a [routerLink]="['login']" class="user">Logout</a>
+         <!-- <a [routerLink]="['signup']">Register</a> -->
+         <div class="bx bx-menu" id="menu-icon"></div>
+       </div>
+    </header>
+
+    
+ 

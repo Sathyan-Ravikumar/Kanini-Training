@@ -1,0 +1,14 @@
+<app-menu></app-menu>
+<div class="row bg">
+<ng-container *ngFor="let m of menudinner">
+    <div class="col-lg-6 mb-4">
+<div class="card content1">
+    <img class="card-img-top" src="{{m.images}}" alt="Card image">
+    <div class="card-body">
+      <p class="card-text">Name of the Dish :{{m.dishname}}</p>
+      <p class="card-text">Starting Price : {{m.cost}}</p>
+    </div>
+  </div>
+  </div>
+</ng-container>
+</div>

@@ -1,0 +1,63 @@
+<div class="main_bg">
+
+<div class="form">
+    <div class="form-text">
+      <h1>
+        <span><img src="../../assets/art-1.png" alt=""></span>Book Now
+        <span><img src="../../assets/art-1.png" alt=""></span>
+      </h1>
+      <p>Book your table and enjoy your meal with your family or friends or love</p>
+    </div>
+    <div class="main-form">
+      <form [formGroup]="bookingForm" (ngSubmit)="onSubmit()">
+        <div>
+          <span>Your full name?</span>
+          <input type="text" formControlName="CustomerName" placeholder="Write your name here..." required>
+          <div *ngIf="bookingForm.get('name')?.invalid && bookingForm.get('name')?.touched" class="error">
+           <p> Name is required </p>
+          </div>
+        </div>
+        <!-- <div>
+          <span>Your email address?</span>
+          <input type="email" formControlName="email" placeholder="Write your email here..." required>
+          <div *ngIf="bookingForm.get('email')?.invalid && bookingForm.get('email')?.touched" class="error">
+           <p>Email is required and it must be valid</p>
+          </div>
+        </div> -->
+        <div>
+          <span>How many people?</span>
+         <input type="number" formControlName="numberOfPeople" placeholder="Number of people" required="">
+          <div *ngIf="bookingForm.get('people')?.invalid && bookingForm.get('people')?.touched" class="error">
+           <p> Please select the number of people</p>
+          </div>
+        </div>
+        <div>
+          <span>Which Slot?</span>
+          <input type="text" formControlName="slot" placeholder="Lunch or Dinner" required>
+          <div *ngIf="bookingForm.get('slot')?.invalid && bookingForm.get('slot')?.touched" class="error">
+            <p>Slot is required</p>
+          </div>
+        </div>
+        <div>
+          <span>What is the date?</span>
+          <input type="date" formControlName="reserveDate" required>
+          <div *ngIf="bookingForm.get('date')?.invalid && bookingForm.get('date')?.touched" class="error">
+          <p>  Date is required </p>
+          </div>
+        </div>
+        <div>
+          <span>Your phone number?</span>
+          <input type="number" formControlName="mobileNumber" placeholder="Write your number here..." required>
+          <div *ngIf="bookingForm.get('number')?.invalid && bookingForm.get('number')?.touched" class="error">
+           <p> Phone number is required </p>
+          </div>
+        </div>
+        <div id="submit">
+          <input type="submit" value="RESERVE" [disabled]="bookingForm.invalid">
+        </div>
+      </form>
+    </div>
+  </div>
+      
+</div>
+  

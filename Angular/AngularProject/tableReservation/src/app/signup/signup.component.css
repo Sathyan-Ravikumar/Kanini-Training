@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.form-container{
+    
+    background:url(../../assets/bg-1.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    box-sizing: border-box;  
+}
+.form{
+    width: 400px;
+    height: 330px;
+    background-color: rgb(21, 23, 43,.3);
+    padding: 20px;
+    display: table;  /*I need to remember it*/
+    box-shadow: 2px;
+    
+}
+
+.login{
+    margin-top:90px;
+}
+
+.signup{
+    margin-top: 200px;
+}
+
+.title{
+    font-size: 24px;
+    font-weight: 600;
+    margin-top:10px;
+    color: #eee;
+}
+
+.input-container{
+    height: 40px;
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+}
+
+.input{
+    background-color: transparent;
+    
+    box-sizing: border-box;
+    color: #eee;
+    font-size: 14px;
+    height: 100%;
+    border: white 2px;
+    padding: 4px 20px;
+    width: 100%;
+    border-radius: 5px;
+    border-style: groove;
+}
+
+
+button{
+    border:0;
+    background-color: rgb(131 10 97);
+    box-sizing: border-box;
+    color:#eee;
+    font-size: 18px;
+    height: 40px;
+    text-align: center;
+    margin-top: 20px;
+    width:100%;
+}
+
+button:hover{
+   color:  rgb(131 10 97);
+   background-color: #eee;
+   cursor: pointer;
+}
+
+.msg{
+    padding-top:10px;
+    font-size: 15px;
+}
+
+
+.error{ color: rgb(216, 5, 5);}
+.success{ color:rgb(0, 54, 0);}
+.light{ color:white;}
+
+.link{
+    text-decoration: none;
+    color: white;
+    padding-top: 10px;
+    font-size: 16px;
+    display: block;
+}
+.link:hover{
+    color:aquamarine;   
+}
