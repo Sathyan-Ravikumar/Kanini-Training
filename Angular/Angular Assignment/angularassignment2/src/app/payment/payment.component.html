@@ -1,0 +1,33 @@
+<div class="body">
+    <h1>Question 3</h1>
+    <div class="slidecontainer">
+    <form #loan="ngForm" (ngSubmit)="onSubmit(loan)" novalidate>
+    <div class="form">
+    <div >
+        <label>Price :
+        <input type="range" min="1000" max="10000" value="" [defaultValue]="1000" class="slider" id="myRange" name="price" #price="ngModel" [(ngModel)]="loans.price">
+        </label>
+        <h5>value : {{price.value}}</h5>
+        <label>down-payment :
+            <input type="range"  min="500" max="2000" value="0" class="slider" id="myRange" name="downpayment" #downpayment="ngModel" [(ngModel)]="loans.downpayment">
+        </label>
+        <h5>value :{{downpayment.value}}</h5>
+    </div>
+    <div>
+        <label>repayment-time :
+            <input type="range" min="1" max="12" value="1" class="slider" id="myRange" name="repaymenttime" #repaymenttime="ngModel" [(ngModel)]="loans.repaymenttime">
+        </label>
+        <h5>months : {{repaymenttime.value}}</h5>
+        <label>interest rate :
+            <input type="range" min="1" max="10" value="1" class="slider" id="myRange" name="interestrate " #interestrate="ngModel" [(ngModel)]="loans.interestrate">
+        </label>
+        <h5>value : {{interestrate.value}}</h5>
+    </div>
+    </div>
+    <button type="button" class="btn btn-secondary" (click)="onSubmit(loan)"> Check loans </button>
+    <h3>{{this.loan_result}}</h3>
+    <h3>{{this.repayment_result}}</h3>
+    </form>
+    </div>
+    </div>
+     

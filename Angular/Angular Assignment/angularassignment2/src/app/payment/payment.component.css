@@ -1,0 +1,16 @@
+*{
+  margin: 10px 0;
+  text-align: center;
+}
+input{
+  margin: 10px 0; 
+}
+.body{
+  
+    margin-top: 50px;
+    background-color:aqua;
+    width: 600px;
+    margin-left: 30%;
+  gap: 16px;
+  border-radius: 5px;
+}

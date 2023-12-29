@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Temperature Form</title>
+</head>
+<body>
+
+<div class="form">
+   
+  <form [formGroup]="myForm" novalidate>
+    <h1>Question 1</h1>
+    <h2>Temperature Conversion</h2>
+    <label>Input a Temperature  :</label>
+    <input type="text" name="number" formControlName="number" required placeholder="Enter the Temperature to convert">
+    <div *ngIf="!number?.['valid'] && (number?.['dirty'] || number?.['touched'])">
+      <div *ngIf="number?.errors?.['notANumber']">
+        Please Input a number
+      </div>
+    </div>
+    <br>
+
+    <label for="unit">Unit for input : </label>
+    <select formControlName="unit">
+      <option value="celsius">Celsius</option>
+      <option value="fahrenheit">Fahrenheit</option>
+    </select>
+
+    <br><br>
+    <button type="submit" [disabled]="!myForm.valid" (click)="convertTemperature()" class="btn btn-primary">Submit</button>
+  </form>
+  <div *ngIf="convertedValue">
+    Converted Value: {{ convertedValue }} {{convertedUnit }}
+  </div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+<form [formGroup]="myForm" (ngSubmit)="onSubmit()" novalidate>
+
+
+    <div>
+      <label for="numVal">Number :</label>
+      <input type="text" id="numVal" name="numVal" formControlName="numVal">
+  
+      <div *ngIf="!numVal?.['valid'] && (numVal?.['dirty'] || numVal?.['touched'])">
+        <div *ngIf="numVal?.errors?.['gte']">
+          The number should be greater than {{numVal?.errors?.['requiredvalue']}}
+        </div>
+      </div>
+    </div>
+  
+    <div>
+      <label for="nameVal">Name  :</label>
+      <input type="text" id="nameVal" name="nameVal" formControlName="nameVal">
+  
+      <div *ngIf="!nameVal?.['valid'] && (nameVal?.['dirty'] || nameVal?.['touched'])">
+        <div *ngIf="nameVal?.errors?.['nmchk']">
+          Name should be greater than {{nameVal?.errors?.['requiredvalue']}}  characters
+        </div>
+      </div>
+    </div>
+  
+  
+    <p>Is Form Valid : {{myForm.valid}} </p>
+  
+    <p>
+      <button type="submit" [disabled]="!myForm.valid">Submit</button>
+    </p>
+  
+  </form>

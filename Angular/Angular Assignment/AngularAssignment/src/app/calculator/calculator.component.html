@@ -1,0 +1,29 @@
+<h2 style="color:rgb(0, 0, 0);text-align: center;">Simple Calculator</h2>
+<div class="calculator">
+   
+    <input type="text" [(ngModel)]="result" class="result">
+    <button class="clear" (click)="clear()">Clear</button>
+  
+    <div class="buttons">
+        <button (click)="Result('7')">7</button>
+      <button (click)="Result('8')">8</button>
+      <button (click)="Result('9')">9</button>
+      <button class="operator" (click)="Result('+')">+</button>
+      <button (click)="Result('4')">4</button>
+      <button (click)="Result('5')">5</button>
+      <button (click)="Result('6')">6</button>
+      <button class="operator" (click)="Result('-')">-</button>
+      <button (click)="Result('1')">1</button>
+      <button (click)="Result('2')">2</button>
+      <button (click)="Result('3')">3</button>
+      <button class="operator" (click)="Result('*')">*</button>
+      <button (click)="Result('0')">0</button>
+      
+      <button class="equal" (click)="calculate()">=</button>
+      <button class="operator" (click)="Result('/')">/</button>
+      <button class="dot" (click)="Result('.')">.</button>
+    </div>
+</div>
+  
+
+  

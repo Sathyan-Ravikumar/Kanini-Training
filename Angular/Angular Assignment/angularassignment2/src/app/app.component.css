@@ -1,0 +1,10 @@
+.btn{
+    border-color: black;
+    margin-left: 50px;
+}
+.btns{
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    justify-content: center;
+}

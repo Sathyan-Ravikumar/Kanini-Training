@@ -1,0 +1,19 @@
+*{
+ text-align: center;
+}
+.form {
+    padding: 20px;
+    height: 380px;
+  
+      margin-top: 50px;
+      background-color: aliceblue;
+      width: 600px;
+      margin-left: 30%;
+      border-radius: 5px;
+    justify-content: center;
+  }
+  .form input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+  }

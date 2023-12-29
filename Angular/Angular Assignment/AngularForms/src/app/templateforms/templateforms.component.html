@@ -1,0 +1,107 @@
+<p>templateforms works!</p>
+<form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)" novalidate>
+    <p>
+        <label for="firstname">First Name</label>
+        <!-- <input type="text" id="firstname" name="firstname" ngModel> -->
+        <input type="text" id="firstname" required minlength="5" maxlength="20" pattern="^[a-zA-Z]+$" #firstname="ngModel" name="firstname" [(ngModel)]="contact.firstname">
+      </p>
+    <div *ngIf="!firstname?.valid && (firstname?.dirty || firstname?.touched)" class="error">
+    Invalid First Name
+    <div *ngIf="firstname.errors?.['required']">
+       First Name is required
+    </div>
+    <div *ngIf="firstname.errors?.['minlength']">
+      First Name Minimum Length is {{firstname.errors?.['maxlength'].requiredLength}}
+    </div>
+    <div *ngIf="firstname.errors?.['pattern']">
+      Invalid Patterns {{firstname.errors?.['pattern'].required}}
+    </div>
+    </div>
+  
+      <p>
+        <label for="lastname">Last Name</label>
+        <!-- <input type="text" id="lastname" name="lastname" ngModel> -->
+        <input type="text" id="lastname" name="lastname" pattern="^[a-zA-Z]+$" #lastname="ngModel"  [(ngModel)]="contact.lastname">
+      </p>
+      <div>
+        <div *ngIf="lastname.errors?.['pattern']">
+            Invalid Last Name
+        </div>
+      </div>
+    
+      <p>
+        <label for="email">Email </label>
+        <!-- <input type="email" id="email" name="email" ngModel> -->
+        <input type="text" id="email" name="email" pattern="^[a-zA-Z0-9]@gmail.com+$" #email="ngModel" [(ngModel)]="contact.email">
+      </p>
+      <div>
+        <div *ngIf="email.errors?.['pattern']">
+          Invalid Email 
+        </div>
+      </div>
+    
+      <p>
+        <label for="gender">Geneder</label>
+        <!-- <input type="radio" value="male" id="gender" name="gender" ngModel> Male
+        <input type="radio" value="female" id="gender" name="gender" ngModel> Female -->
+        <input type="radio" value="male" id="gender" name="gender" [(ngModel)]="contact.gender"> Male
+        <input type="radio" value="female" id="gender" name="gender" [(ngModel)]="contact.gender"> Female
+     </p>
+    
+      <p>
+        <label for="isMarried">Married</label>
+        <!-- <input type="checkbox" id="isMarried" name="isMarried" ngModel>
+        <label for="isMarried">Single</label>
+        <input type="checkbox" id="isMarried" name="isMarried" ngModel> -->
+        <input type="checkbox" id="isMarried" required name="isMarried" [(ngModel)]="contact.isMarried">
+      </p>
+    
+      <p>
+        <label for="country">country </label>
+        <!-- <select name="country" id="country" ngModel>
+          <option selected="" value=""></option>
+          <option [ngValue]="c.id" *ngFor="let c of countryList">
+            {{c.name}}
+          </option>
+        </select> -->
+        <select id="country" name="country" [(ngModel)]="contact.country">
+          <option [ngValue]="c.id" *ngFor="let c of countryList">
+            {{c.name}}
+          </option>
+        </select>
+      </p>
+    
+      <div ngModelGroup="address">
+        <p>
+          <label for="city">City</label>
+          <!-- <input type="text" name="city" ngModel> -->
+          <input type="text" id="city" name="city" [(ngModel)]="contact.address.city">
+        </p>
+    
+        <p>
+          <label for="street">Street</label>
+          <!-- <input type="text" name="street" ngModel> -->
+          <input type="text" id="street" name="street" [(ngModel)]="contact.address.street"> 
+        </p>
+        <p>
+          <label for="pincode">Pin Code</label>
+          <!-- <input type="text" name="pincode" ngModel> -->
+          <input type="text" id="pincode" name="pincode"  [(ngModel)]="contact.address.pincode">
+        </p>
+      </div>
+    
+    
+      <p>
+        <button type="submit">Submit</button>
+      </p>
+    
+      <p>
+        <button type="button" (click)="setDefaults()">Set Defaults</button>
+        <button type="button" (click)="reset(contactForm)">Reset</button>
+      </p>
+     
+      <pre>Value : {{contactForm.value | json }} </pre>
+      <pre>Valid : {{contactForm.valid}} </pre>
+      <pre>Touched : {{contactForm.touched  }} </pre>
+      <pre>Submitted : {{contactForm.submitted  }} </pre>
+</form>
